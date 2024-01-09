@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* const color */
+
+$background: #DBEADD;
+$nav-back: #D9D9D9;
+$component-back: #C4DCD3;
+$active-text-color: #0D5329;
+
+/* font */
+@mixin FontGlobal($fontColor, $fontWeight, $fontSize) {
+    color:$fontColor ;
+    font-family: 'Josefin Sans';
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: $fontWeight;
+    line-height: normal;
+    flex-shrink: 0;
+}

@@ -1,0 +1,13 @@
+.container_todo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0;
+    margin: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    background-color: $background;
+}

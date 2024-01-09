@@ -1,0 +1,70 @@
+aside {
+    width: 100%;
+    margin: auto;
+    .todo-brand {
+        padding: 24px 0 48px 22px;
+        border-radius: 0px 0px 24px 24px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        h1{
+            @include FontGlobal($active-text-color, 700, 40px);
+            text-wrap: wrap;
+        }
+    }
+    .todo-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      li{
+        list-style: none;
+        .nav-link{
+          @include FontGlobal(#5B5B5B, 700, 32px);
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding: 7px 15px;
+          flex-wrap: wrap;
+          border-radius: 24px 0 0 24px;
+          &.active{
+            color: $active-text-color;
+            background-color: #5B5B5B;
+          }
+          span{
+            text-wrap: wrap;
+          }
+          gap: 30px;
+          align-items: center;
+          text-transform: lowercase;
+        }
+      }  
+    }
+}
+
+@media screen and (max-width: 768px) {
+    aside{
+      width: fit-content;
+      margin-left: 0;
+        .todo-menu{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 0;
+          width: fit-content;
+          li{
+            width: fit-content;
+            .nav-link{
+              border-radius: 0;
+            }
+          }
+          span{
+            display: none;
+          }
+        }
+        .todo-brand{
+          display: none;
+        }
+    }
+}

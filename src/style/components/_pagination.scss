@@ -1,0 +1,19 @@
+nav[aria-label~="Page"] {
+    display: flex;
+    justify-content: center;
+    
+    .pagination {
+        .page-link {
+            &.active {
+                background-color: $active-text-color;
+                box-shadow: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    nav[aria-label~="Page"] {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

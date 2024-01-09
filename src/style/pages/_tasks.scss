@@ -1,0 +1,14 @@
+.tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    width: 97%;
+    margin: auto;
+    .task-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+}
